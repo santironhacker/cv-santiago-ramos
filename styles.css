@@ -1,0 +1,393 @@
+/* --- GENERAL STYLES --- */
+body
+{
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title
+{
+    font-weight: 800;
+}
+
+.full-width {
+    max-width: 100%;
+}
+
+/* --- COLORS --- */
+.back-blue
+{
+    background-color: #3da5d9;
+}
+
+.color-white
+{
+    color: white;
+}
+
+.underline-orange
+{
+    border-bottom: solid orange 0.3rem
+}
+
+.underline-blue
+{
+    border-bottom: solid blue 0.3rem
+}
+
+.underline-black
+{
+    border-bottom: solid black 0.3rem
+}
+
+/* --- FONTS --- */
+.font-luckiest
+{
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.font-indie
+{
+  font-family: 'Indie Flower', cursive;
+}
+
+.font-montserrat
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-poppins
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*TO DO --be used in Hobbies*/
+/*.font-inconsolata
+{
+    font-family: 'Inconsolata', monospace;
+}*/
+
+/* --- NAVBAR --- */
+.navbar-nav .nav-item .nav-link:hover
+{
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color: black;
+}
+
+.nav-item a
+{
+    color: black;
+}
+
+/* TO DO -- color tab link where user is */
+/*.navbar-light .nav-item.active .nav-link,
+.navbar-light .nav-item .nav-link:active,
+.navbar-light .nav-item .nav-link:focus,
+{
+    color: yellow;
+}*/
+
+
+/* --- HOME --- */
+.caption-carousel
+{
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+    position: absolute;
+    right: 15%;
+    top: 2%;
+    color: black;
+    left: 12%;
+    z-index: 10;
+    text-align: center;
+    width: 80%;
+}
+
+.caption-carousel h1
+{
+  font-size: 2rem;
+}
+.caption-carousel p
+{
+    font-size: 1.3rem;
+}
+
+@media (min-width:568px)
+{
+    .caption-carousel p
+    {
+        font-size: 1.7rem;
+    }
+    .caption-carousel h1
+    {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 768px)
+{
+    .caption-carousel h1
+    {
+      font-size: 2.5rem;
+    }
+    .caption-carousel p
+    {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width:992px)
+{
+    .caption-carousel
+    {
+        top: 4%;
+    }
+    .caption-carousel p
+    {
+        font-size: 1.6rem;
+    }
+    .caption-carousel h1
+    {
+        font-size: 3rem;
+    }
+}
+
+.values
+{
+    font-weight: bold;
+    font-size: 3rem;
+    /*to compaire: old value: 8vh*/
+}
+
+/* --- EDUCATION --- */
+.central-pic
+{
+    height: 16rem;
+    width: auto;
+}
+
+/* SPEECH BUBBLE */
+.speech-bubble
+{
+    margin-left: 0%;
+    background: #dee2e6;
+    border: 1px solid #6c757d;
+    padding: 0.5rem;
+    position: relative;
+    z-index: -2;
+}
+
+.speech-bubble:after
+{
+    content: '';
+    display: block;
+    position: absolute;
+    background: #f8f9fa;
+    width: 3rem;
+    height: 3rem;
+    -moz-transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+}
+
+.bubble-left:after
+{
+    left: 10rem;
+    border-left: 1px solid #6c757d;
+    border-bottom: 1px solid #6c757d;
+    /*top: 85%;*/
+    bottom: -1.5rem;
+    z-index: -1;
+}
+
+.bubble-right:after
+{
+    right: 10rem;
+    border-right: 1px solid #6c757d;
+    border-top: 1px solid #6c757d;
+    top: -1.55rem;
+    z-index: -1;
+}
+
+@media (min-width: 992px)
+{
+    .bubble-left:after
+    {
+        left: -1.55rem;
+        border-left: 1px solid #6c757d;
+        border-top: 1px solid #6c757d;
+        border-bottom: none;
+        top: 10%;
+    }
+
+    .bubble-right:after
+    {
+        right: -1.55rem;
+        border-right: 1px solid #6c757d;
+        border-bottom: 1px solid #6c757d;
+        border-top: none;
+        top: 10%;
+    }
+}
+
+/* TO DO --SPINNER */
+/*.lds-ripple */
+/*{*/
+/*  display: inline-block;*/
+/*  position: relative;*/
+/*  width: 80px;*/
+/*  height: 80px;*/
+/*}*/
+
+/*.lds-ripple div */
+/*{*/
+/*  position: absolute;*/
+/*  border: 4px solid #fff;*/
+/*  opacity: 1;*/
+/*  border-radius: 50%;*/
+/*  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;*/
+/*  color: red;*/
+/*}*/
+
+/*.lds-ripple div:nth-child(2) */
+/*{*/
+/*  animation-delay: -0.5s;*/
+/*}*/
+
+/*@keyframes lds-ripple */
+/*{*/
+/*  0% */
+/*  {*/
+/*    top: 36px;*/
+/*    left: 36px;*/
+/*    width: 0;*/
+/*    height: 0;*/
+/*    opacity: 1;*/
+/*  }*/
+/*  100% */
+/*  {*/
+/*    top: 0px;*/
+/*    left: 0px;*/
+/*    width: 72px;*/
+/*    height: 72px;*/
+/*    opacity: 0;*/
+/*  }*/
+/*}*/
+
+/* --- PROFESSIONAL-POSITIONS --- */
+.timeline
+{
+	 width: 100%;
+	 background: #fff;
+	 padding: 1.9rem;
+	 padding-bottom: 0rem;
+	 position: relative;
+	 box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.timeline:before
+{
+	 content: '';
+	 position: absolute;
+	 top: 0rem;
+	 left: calc(33% + 15px);
+	 bottom: 0rem;
+	 width: 0.5rem;
+	 background: #ddd;
+}
+
+.timeline:after
+{
+	 content: "";
+	 display: table;
+	 clear: both;
+}
+
+.entry
+{
+	 clear: both;
+	 text-align: left;
+	 position: relative;
+}
+
+.entry .title
+{
+	 float: left;
+	 width: 33%;
+	 padding-right: 1rem;
+	 text-align: right;
+	 position: relative;
+}
+
+.entry .title:before
+{
+	 content: '';
+	 position: absolute;
+	 width: 1rem;
+	 height: 1rem;
+	 border: 0.5rem solid salmon;
+	 background-color: #fff;
+	 border-radius: 100%;
+	 top: 7%;
+	 left: 100%;
+	 z-index: 99;
+}
+
+.entry .title h3
+{
+	 margin: 0;
+	 font-size: 120%;
+}
+
+.entry .title p
+{
+	 margin: 0;
+	 font-size: 100%;
+}
+ .entry .body {
+	 margin: 0 0 3em;
+	 float: right;
+	 width: 66%;
+	 padding-left: 30px;
+}
+
+.entry .body p
+{
+	 line-height: 1.4em;
+}
+
+.entry .body p:first-child
+{
+	 margin-top: 0;
+	 font-weight: 400;
+}
+
+.entry .body ul
+{
+	 color: #aaa;
+	 padding-left: 0;
+	 list-style-type: none;
+}
+
+.entry .body ul li:before
+{
+	 content: "–";
+	 margin-right: 0.5em;
+}
+
+/* --- PROFESSIONAL-PROJECTS --- */
+.bald-link
+{
+    color: black;
+}
+
+.bald-link:hover
+{
+    text-decoration: none;
+}
+
+/* --- PROFESSIONAL-TOOLS --- */
+.tools-logo {
+    height: 10rem;
+    width: auto;
+}
