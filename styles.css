@@ -251,6 +251,10 @@ body
     }
 }
 
+.degree-description > p {
+    margin: 0;
+}
+
 /* TO DO --SPINNER */
 /*.lds-ripple */
 /*{*/
