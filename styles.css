@@ -1,10 +1,22 @@
 /* --- GENERAL STYLES --- */
+html {
+    height: 100%;
+}
+
 body
 {
     min-height: 100vh;
     position: relative;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    /* Avoid the IE 10-11 `min-height` bug. */
+}
+
+#app {
+    flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
 }
 
 .title
@@ -15,6 +27,7 @@ body
 .full-width {
     max-width: 100%;
 }
+
 
 /* --- COLORS --- */
 .back-blue
@@ -88,6 +101,14 @@ body
 {
     color: yellow;
 }*/
+
+
+
+/* --- HOME --- */
+.page-footer {
+    flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+    padding: 20px;
+}
 
 
 /* --- HOME --- */
@@ -344,32 +365,32 @@ body
 	 margin: 0;
 	 font-size: 100%;
 }
- .entry .body {
+ .entry .description {
 	 margin: 0 0 3em;
 	 float: right;
 	 width: 66%;
 	 padding-left: 30px;
 }
 
-.entry .body p
+.entry .description p
 {
 	 line-height: 1.4em;
 }
 
-.entry .body p:first-child
+.entry .description p:first-child
 {
 	 margin-top: 0;
 	 font-weight: 400;
 }
 
-.entry .body ul
+.entry .description ul
 {
-	 color: #aaa;
+	 color: #888;
 	 padding-left: 0;
 	 list-style-type: none;
 }
 
-.entry .body ul li:before
+.entry .description ul li:before
 {
 	 content: "–";
 	 margin-right: 0.5em;
