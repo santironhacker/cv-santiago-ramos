@@ -5,10 +5,10 @@ html {
 
 body
 {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     position: relative;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     display: flex;
     flex-direction: column;
     height: 100vh; 
@@ -17,6 +17,7 @@ body
 
 #app {
     flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+    transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .title
@@ -30,45 +31,63 @@ body
 
 
 /* --- COLORS --- */
-.back-blue
+.menu-color
 {
-    background-color: #3da5d9;
+    background-color: #D79922;
+    /* --older 1: background-color: #3da5d9; */
+    /* --older 2: background-color: #90CCF4; */
 }
 
-.color-white
+.body-color 
 {
-    color: white;
+    background-color: #F2F0EB;
 }
 
-.underline-orange
+.contrast-color
 {
-    border-bottom: solid orange 0.3rem
+    color: white !important;
 }
 
-.underline-blue
+.underline-style-one
 {
-    border-bottom: solid blue 0.3rem
+    border-bottom: solid #F13C20 0.3rem;
 }
 
-.underline-black
+.underline-style-two
 {
-    border-bottom: solid black 0.3rem
+    border-bottom: solid #4056A1 0.3rem
 }
+
+.underline-style-three
+{
+    border-bottom: solid #D79922 0.3rem
+}
+
+.plain-style-one 
+{
+    color: #F13C20;
+}
+
+.plain-style-two
+{
+    color: #4056A1;
+}
+
+.plain-style-three
+{
+    color: #D79922;
+}
+
+.background-style-two 
+{
+    background-color: #4056A1;
+}
+
 
 /* --- FONTS --- */
-.font-luckiest
+.font-lato
 {
-  font-family: 'Luckiest Guy', cursive;
-}
-
-.font-indie
-{
-  font-family: 'Indie Flower', cursive;
-}
-
-.font-montserrat
-{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .font-poppins
@@ -76,22 +95,21 @@ body
     font-family: 'Poppins', sans-serif;
 }
 
-/*TO DO --be used in Hobbies*/
-/*.font-inconsolata
-{
-    font-family: 'Inconsolata', monospace;
-}*/
+
 
 /* --- NAVBAR --- */
 .navbar-nav .nav-item .nav-link:hover
 {
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-    color: black;
+    /* text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; */
+    /* color: black;
+    color: #545149; */
+    color: white;
 }
 
 .nav-item a
 {
-    color: black;
+    /* color: black; */
+    color: #212529;
 }
 
 /* TO DO -- color tab link where user is */
@@ -114,7 +132,9 @@ body
 /* --- HOME --- */
 .caption-carousel
 {
-    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-weight: 700;
+    /* text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white; */
     position: absolute;
     right: 15%;
     top: 2%;
@@ -129,6 +149,7 @@ body
 {
   font-size: 2rem;
 }
+
 .caption-carousel p
 {
     font-size: 1.3rem;
