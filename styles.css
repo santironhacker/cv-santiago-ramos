@@ -120,29 +120,31 @@ body
     color: yellow;
 }*/
 
-
-
-/* --- HOME --- */
+/* --- FOOTER --- */
 .page-footer {
     flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
     padding: 20px;
 }
 
 
+
 /* --- HOME --- */
+.h-102
+{
+    height: 102% !important;
+}
+
 .caption-carousel
 {
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     font-weight: 700;
-    /* text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white; */
-    position: absolute;
     right: 15%;
     top: 2%;
     color: black;
     left: 12%;
     z-index: 10;
     text-align: center;
-    width: 80%;
+    width: 100%;
 }
 
 .caption-carousel h1
@@ -153,6 +155,7 @@ body
 .caption-carousel p
 {
     font-size: 1.3rem;
+    background-color: rgba(170, 170, 170, 0.3);
 }
 
 @media (min-width:568px)
@@ -176,6 +179,7 @@ body
     .caption-carousel p
     {
         font-size: 1.4rem;
+        padding: 0% 12%;
     }
 }
 
@@ -188,6 +192,7 @@ body
     .caption-carousel p
     {
         font-size: 1.6rem;
+        padding: 0% 18%;
     }
     .caption-carousel h1
     {
@@ -201,6 +206,7 @@ body
     font-size: 3rem;
     /*to compaire: old value: 8vh*/
 }
+
 
 /* --- EDUCATION --- */
 .central-pic
