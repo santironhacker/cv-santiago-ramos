@@ -98,17 +98,13 @@ body
 
 
 /* --- NAVBAR --- */
-.navbar-nav .nav-item .nav-link:hover
+.navbar-nav .nav-item .nav-link:hover, .link:hover
 {
-    /* text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; */
-    /* color: black;
-    color: #545149; */
     color: white;
 }
 
-.nav-item a
+.nav-item a, .link
 {
-    /* color: black; */
     color: #212529;
 }
 
