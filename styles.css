@@ -112,6 +112,7 @@ body
 .nav-item a, .link
 {
     color: #212529;
+    cursor: pointer;
 }
 
 /* TO DO -- color tab link where user is */
