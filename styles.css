@@ -18,11 +18,17 @@ body
 #app {
     flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
     transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: -5;
 }
 
 .title
 {
     font-weight: 800;
+}
+
+.title-underlined
+{
+    line-height: 4rem;
 }
 
 .full-width {
@@ -214,10 +220,9 @@ body
 /* SPEECH BUBBLE */
 .speech-bubble
 {
-    margin-left: 0%;
-    background: #dee2e6;
     border: 1px solid #6c757d;
-    padding: 0.5rem;
+    border-radius: 20% / 40% !important;
+    padding: 2.5rem 4rem;
     position: relative;
     z-index: -2;
 }
@@ -227,9 +232,11 @@ body
     content: '';
     display: block;
     position: absolute;
-    background: #f8f9fa;
+    background-color: #f8f9fa!important;
     width: 3rem;
     height: 3rem;
+    /* margin-bottom: 1rem; */
+    /* background-color: #F2F0EB; */
     -moz-transform:rotate(-45deg);
     -webkit-transform:rotate(-45deg);
 }
@@ -239,8 +246,8 @@ body
     left: 10rem;
     border-left: 1px solid #6c757d;
     border-bottom: 1px solid #6c757d;
-    /*top: 85%;*/
     bottom: -1.5rem;
+    /* bottom: -2.5rem; */
     z-index: -1;
 }
 
@@ -249,7 +256,7 @@ body
     right: 10rem;
     border-right: 1px solid #6c757d;
     border-top: 1px solid #6c757d;
-    top: -1.55rem;
+    top: -1.5rem;
     z-index: -1;
 }
 
@@ -257,25 +264,21 @@ body
 {
     .bubble-left:after
     {
-        left: -1.55rem;
+        left: -1.52rem;
         border-left: 1px solid #6c757d;
         border-top: 1px solid #6c757d;
         border-bottom: none;
-        top: 10%;
+        top: 40%;
     }
 
     .bubble-right:after
     {
-        right: -1.55rem;
+        right: -1.52rem;
         border-right: 1px solid #6c757d;
         border-bottom: 1px solid #6c757d;
         border-top: none;
-        top: 10%;
+        top: 40%;
     }
-}
-
-.degree-description > p {
-    margin: 0;
 }
 
 /* TO DO --SPINNER */
