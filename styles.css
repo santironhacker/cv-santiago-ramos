@@ -448,6 +448,17 @@ body
 }
 
 /* --- PROFESSIONAL-PROJECTS --- */
+.space-list-bottom ul li
+{
+    padding-bottom: 0.5rem;
+}
+
+.h5-titles-style h5
+{
+    color: #545149;
+    font-weight: 600;
+}
+
 .bald-link
 {
     color: black;
