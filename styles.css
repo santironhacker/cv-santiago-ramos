@@ -475,3 +475,8 @@ body
     height: 10rem;
     width: auto;
 }
+
+.scale-up
+{
+    transform: scale(1.6);
+}
