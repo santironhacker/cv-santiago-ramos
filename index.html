@@ -20,45 +20,51 @@
     <body>
         <header>
             <div class="container-fluid p-0">
-                <nav class="navbar navbar-expand-sm row col-sm no-gutters menu-color">
+                <!-- d-flex flex-column justify-content-center justify-content-sm-start -->
+                <nav class="row navbar navbar-expand-sm flex-sm-row col-sm no-gutters menu-color">
 
                     <div class="col-9 col-sm-5 col-lg-4 d-flex">
-                        <a class="navbar-brand d-sm-none d-md-block" href="#">
+                        <a class="navbar-brand" href="#">
                             <img src="assets/img/santi_cool.jpg" class="rounded" width="30" height="30" alt="Picture of Santiago Ramos">
                         </a>
                         <span class="navbar-brand mb-0 h1">Santiago Ramos CV</span>
                     </div>
-
-                    <div class="col-3 col-sm-7 offset-lg-2 col-lg-6">
-                        <button class="navbar-toggler navbar-light float-right" style="border: solid black 1px;" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    
+                    <!-- d-flex flex-column justify-content-center justify-content-sm-start -->
+                    <!-- col-sm-7 offset-lg-2 col-lg-6 -->
+                    <div class="col-3 d-sm-none center-block text-center">
+                        <button class="navbar-toggler navbar-light float-sm-right" style="border: solid black 1px;" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-
-                        <div class="collapse navbar-collapse float-right" id="navbarNav">
-                            <ul class="nav navbar-nav my-2 my-lg-0 d-flex align-items-center">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#education">Education</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Professional Experience
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#professional-positions">Positions</a>
-                                        <a class="dropdown-item" href="#professional-projects">Projects</a>
-                                        <a class="dropdown-item" href="#professional-tools">Tools</a>
-                                    </div>
-                                </li>
-                                <!--TO DO --hobbies page -->
-                                <!--<li class="nav-item">-->
-                                <!--    <a class="nav-link" href="#">Hobbies</a>-->
-                                <!--</li>-->
-                            </ul>
-                        </div>
                     </div>
+
+                    <!-- col-3 col-sm-7 offset-lg-2 col-lg-6  -->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="nav navbar-nav my-2 my-lg-0 mr-4 d-flex align-items-end justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#education">Education</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Professional Experience
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#professional-positions">Positions</a>
+                                    <a class="dropdown-item" href="#professional-projects">Projects</a>
+                                    <a class="dropdown-item" href="#professional-tools">Tools</a>
+                                </div>
+                            </li>
+                            <!--TO DO --hobbies page -->
+                            <!--<li class="nav-item">-->
+                            <!--    <a class="nav-link" href="#">Hobbies</a>-->
+                            <!--</li>-->
+                        </ul>
+                    </div>
+                    <!-- <div class="row">
+                    </div> -->
 
                 </nav>
             </div>
