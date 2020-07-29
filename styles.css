@@ -478,6 +478,35 @@ body
     text-decoration: none;
 }
 
+.long-screenshot-container
+{
+    overflow-x: scroll;
+    max-height: 20rem;
+}
+
+.app-screenshot
+{
+    max-width: 100%; 
+    border-radius: 11%;
+}
+
+@media(min-width:300px)
+{
+    .app-screenshot
+    {
+        max-width: 15rem; 
+    }
+}
+
+@media(min-width:576px)
+{
+    .long-screenshot-container
+    {
+        max-height: 30rem;
+    }
+}
+
+
 /* --- PROFESSIONAL-TOOLS --- */
 .tools-logo {
     height: 6.5rem;
