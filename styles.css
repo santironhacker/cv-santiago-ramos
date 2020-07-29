@@ -17,13 +17,16 @@ body
 
 #app {
     flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-    transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
-    z-index: -5;
+    /* transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1); */
+    /* z-index: -5; */
 }
 
 .title
 {
     font-weight: 800;
+    line-height: 3rem;
+    text-align: left;
+    margin-left: 1rem;
 }
 
 .title-underlined
@@ -137,9 +140,14 @@ body
     height: 102% !important;
 }
 
+.carousel 
+{
+    /* min-height: 22rem; */
+}
+
 .caption-carousel
 {
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    /* text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; */
     font-weight: 700;
     right: 15%;
     top: 2%;
@@ -472,8 +480,24 @@ body
 
 /* --- PROFESSIONAL-TOOLS --- */
 .tools-logo {
-    height: 10rem;
+    height: 6.5rem;
     width: auto;
+}
+
+@media (min-width: 576px)
+{
+    .tools-logo
+    {
+        height: 8.5rem;
+    }
+}
+
+@media (min-width: 768px)
+{
+    .tools-logo
+    {
+        height: 10rem;
+    }
 }
 
 .scale-up
