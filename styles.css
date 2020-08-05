@@ -18,7 +18,7 @@ body
 #app {
     flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
     /* transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1); */
-    z-index: -5;
+    /* z-index: -5; */
 }
 
 .title
@@ -506,6 +506,23 @@ body
     }
 }
 
+.hashtag {
+    transform: rotate(10deg);
+	color: #555;
+	font-size: 1.6rem;
+	font-weight: 700;
+	border: 0.25rem solid #555;
+	display: inline-block;
+    padding: 0.5rem 1rem 0rem;
+    margin-right: 2rem;
+    margin-left: auto;
+	text-transform: uppercase;
+	border-radius: 1rem;
+	font-family: 'Courier';
+	-webkit-mask-image: url('/assets/img/grunge_background_med.png');
+    -webkit-mask-size: 944px 604px;
+    mix-blend-mode: multiply;
+} 
 
 /* --- PROFESSIONAL-TOOLS --- */
 .tools-logo {
