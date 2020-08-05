@@ -27,6 +27,7 @@ body
     line-height: 3rem;
     text-align: left;
     margin-left: 1rem;
+    height: fit-content;
 }
 
 .title-underlined
@@ -480,7 +481,7 @@ body
 
 .long-screenshot-container
 {
-    overflow-x: scroll;
+    overflow-x: auto;
     max-height: 20rem;
 }
 
@@ -523,6 +524,25 @@ body
     -webkit-mask-size: 944px 604px;
     mix-blend-mode: multiply;
 } 
+
+.is-personal {
+    /* color: #545149; */
+    color: #4c3e1a;
+    border: 0.5rem double #4c3e1a;
+    transform: rotate(3deg);
+    -webkit-mask-position: 2rem 1rem;
+    font-size: 2rem;  
+}
+
+.is-draft {
+    color: #C4C4C4;
+    border: 1rem double #C4C4C4;
+    transform: rotate(-5deg);
+    /* font-size: 6rem; */
+    font-family: "Open sans", Helvetica, Arial, sans-serif;
+    border-radius: 0;
+    padding: 0.5rem;
+}
 
 /* --- PROFESSIONAL-TOOLS --- */
 .tools-logo {
