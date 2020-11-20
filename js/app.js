@@ -5,9 +5,9 @@
         var router = new Router([
             new Route('home', 'home.html', true),
             new Route('education', 'education.html'),
-            new Route('professional-positions', 'professional-positions.html'),
-            new Route('professional-projects', 'professional-projects.html'),
-            new Route('professional-tools', 'professional-tools.html'),
+            new Route('positions', 'positions.html'),
+            new Route('projects', 'projects.html'),
+            new Route('tools', 'tools.html'),
         ]);
     }
     init();
