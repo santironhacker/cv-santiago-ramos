@@ -25,3 +25,7 @@ Thumbs.db
 *.swp
 .Spotlight*
 .Trashes
+
+# node and bundles
+/node_modules
+/dist
