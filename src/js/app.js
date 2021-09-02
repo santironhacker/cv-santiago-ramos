@@ -1,4 +1,6 @@
 "use strict";
+import { Router } from "./router.js";
+import { Route } from "./route.js";
 
 (function () {
     function init() {
@@ -9,6 +11,7 @@
             new Route("projects", "projects.html"),
             new Route("tools", "tools.html"),
         ]);
+        console.log(router);
     }
     init();
 })();
