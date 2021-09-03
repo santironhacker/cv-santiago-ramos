@@ -1,9 +1,9 @@
 {
-    "input": "src/views/*.html",
-    "output": "dist/views",
+    "input": "src/index.html",
+    "output": "dist/",
     "plugins": {
         "posthtml-modules": {
-            "root": "./src/views",
+            "root": "./src",
             "initial": true
         },
         "htmlnano": {}

@@ -7,14 +7,19 @@
     "scripts": {
         "clean": "rimraf dist/*",
         "css:autoprefixer": "postcss -u autoprefixer -r dist/styles.css",
-        "css:scss": "sass --style=compressed src/css/styles.css dist/styles.css",
-        "css:lint": "stylelint src/css/*.css --syntax css",
+        "css:scss": "sass --style=compressed src/styles.css dist/styles.css",
+        "css:lint": "stylelint src/*.css --syntax css",
         "build:css": "npm run css:lint && npm run css:scss && npm run css:autoprefixer",
         "build:js": "webpack --mode=production",
-        "build:html": "posthtml -c posthtml.json",
+        "build:html": "posthtml -c posthtml.json && posthtml -o dist/index.html -i index.html -c posthtmlindex.json",
         "build:images": "imagemin src/assets/**/* --out-dir=dist/assets/img",
         "build": "npm run clean && run-s build:*",
-        "serve": "browser-sync start --server \"dist\" --files \"dist\""
+        "serve": "browser-sync start --server \"dist\" --files \"dist\"",
+        "watch:css": "onchange \"src/css\" -- npm run build:css",
+        "watch:html": "onchange \"src/views\" -- npm run build:html",
+        "watch:images": "onchange \"src/assets/img\" -- npm run build:images",
+        "watch:js": "onchange \"src/js\" -- webpack --mode=development",
+        "watch": "run-p serve watch:*"
     },
     "repository": {
         "type": "git",
@@ -36,6 +41,7 @@
         "htmlnano": "^1.0.0",
         "imagemin-cli": "^6.0.0",
         "npm-run-all": "^4.1.5",
+        "onchange": "^7.1.0",
         "postcss": "^8.3.6",
         "postcss-cli": "^8.3.1",
         "posthtml": "^0.16.5",
