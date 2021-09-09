@@ -29,3 +29,4 @@ Thumbs.db
 # node and bundles
 /node_modules
 /dist
+.firebase/
