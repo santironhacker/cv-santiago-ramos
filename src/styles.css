@@ -443,21 +443,6 @@ body {
 
 .hashtag {
     transform: rotate(10deg);
-<<<<<<< HEAD:styles.css
-	color: #555;
-	font-size: 1.6rem;
-	font-weight: 700;
-	border: 0.25rem solid #555;
-	display: inline-block;
-    padding: 0.5rem 1rem 0.5rem;
-    margin-right: 2rem;
-    margin-left: auto;
-	text-transform: uppercase;
-	border-radius: 1rem;
-    font-family: 'Courier';
-    mask-image: url('/assets/img/grunge_background_med_low.png');;
-    -webkit-mask-image: url('/assets/img/grunge_background_med_low.png');
-=======
     color: #555;
     font-size: 1.6rem;
     font-weight: 700;
@@ -471,7 +456,6 @@ body {
     font-family: "Courier";
     mask-image: url("/assets/img/grunge_background_med_low.png");
     -webkit-mask-image: url("/assets/img/grunge_background_med_low.png");
->>>>>>> 3b8a50ac1cdeed74483b991651603e8b3a6d1b1e:src/css/styles.css
     mix-blend-mode: multiply;
 }
 
@@ -480,11 +464,7 @@ body {
     color: #4c3e1a;
     border: 0.5rem double #4c3e1a;
     transform: rotate(3deg);
-<<<<<<< HEAD:styles.css
-    font-size: 2rem;  
-=======
     font-size: 2rem;
->>>>>>> 3b8a50ac1cdeed74483b991651603e8b3a6d1b1e:src/css/styles.css
 }
 
 .is-draft {
